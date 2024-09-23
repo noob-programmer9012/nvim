@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "vi_mode_hl",
+        "lazygit",
+        "Terminal"
+    ]
+}
