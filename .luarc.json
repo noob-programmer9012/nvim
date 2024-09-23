@@ -3,6 +3,7 @@
         "vim",
         "vi_mode_hl",
         "lazygit",
-        "Terminal"
+        "Terminal",
+        "local"
     ]
 }

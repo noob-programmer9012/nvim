@@ -1,17 +1,31 @@
---[[ return {
+return {
   "goolord/alpha-nvim",
   dependencies = {
-    "echasnovski/mini.icons",
-    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons",
   },
-  config = function()
-    require("alpha").setup(require("alpha.themes.theta").config)
-  end,
-} ]]
 
-return {
-	"goolord/alpha-nvim",
-	config = function()
-		require("alpha").setup(require("alpha.themes.dashboard").config)
-	end,
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.dashboard")
+
+    dashboard.section.header.val = {
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                     ]],
+      [[       ████ ██████           █████      ██                     ]],
+      [[      ███████████             █████                             ]],
+      [[      █████████ ███████████████████ ███   ███████████   ]],
+      [[     █████████  ███    █████████████ █████ ██████████████   ]],
+      [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+      [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+      [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+    }
+
+    alpha.setup(dashboard.config)
+  end,
 }
