@@ -10,7 +10,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.clang_format,
-				require("none-ls.diagnostics.eslint"),
+				-- require("none-ls.diagnostics.eslint"),
 			},
 			on_attach = function(client, bufnr)
 				if client.supports_method("textDocument/formatting") then

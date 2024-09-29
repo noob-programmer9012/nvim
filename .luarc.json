@@ -4,6 +4,7 @@
         "vi_mode_hl",
         "lazygit",
         "Terminal",
-        "local"
+        "local",
+        "augroup"
     ]
 }
