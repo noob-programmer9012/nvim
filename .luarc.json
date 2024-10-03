@@ -5,6 +5,7 @@
         "lazygit",
         "Terminal",
         "local",
-        "augroup"
+        "augroup",
+        "modes"
     ]
 }
