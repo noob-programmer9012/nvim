@@ -6,6 +6,12 @@ vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.filetype.add({
+  extension = {
+    handlebars = "handlebars",
+  },
+}) --source this file after running vim.filetype.add()
+
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true })

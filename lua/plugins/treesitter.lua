@@ -11,6 +11,6 @@ return {
 			highlight = { enable = true },
 			indent = { enable = true },
 		})
-		vim.treesitter.language.register("html", { "handlebars" })
+		vim.treesitter.language.register("html", "handlebars")
 	end,
 }
