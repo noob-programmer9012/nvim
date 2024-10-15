@@ -3,17 +3,11 @@ return {
 	config = function()
 		require("autoclose").setup({
 			keys = {
-				[">"] = {
-					escape = false,
-					close = true,
-					pair = "<>",
-					disabled_filetypes = { "javascript", "cpp", "python" },
-				},
 				["<"] = {
-					escape = false,
+					escape = true,
 					close = true,
 					pair = "<>",
-					disabled_filetypes = { "javascript", "cpp", "python", "lua" },
+					enabled_filetypes = { "html", "javascriptreact", "handlebars" },
 				},
 			},
 		})
