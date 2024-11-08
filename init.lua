@@ -1,16 +1,22 @@
+-- vim.cmd("set number")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set tabstop=2")
 vim.cmd("set expandtab")
-vim.cmd("set number")
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.filetype.add({
-  extension = {
-    handlebars = "handlebars",
-  },
+	extension = {
+		handlebars = "handlebars",
+	},
 }) --source this file after running vim.filetype.add()
+
+vim.api.nvim_create_autocmd("VimEnter", {
+	callback = function()
+		vim.cmd("set number")
+	end,
+})
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
