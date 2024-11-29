@@ -1,4 +1,4 @@
--- vim.cmd("set number")
+vim.cmd("set number")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set tabstop=2")
 vim.cmd("set expandtab")
@@ -12,11 +12,11 @@ vim.filetype.add({
 	},
 }) --source this file after running vim.filetype.add()
 
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		vim.cmd("set number")
-	end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+-- 	callback = function()
+-- 		vim.cmd("set number")
+-- 	end,
+-- })
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
