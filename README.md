@@ -9,7 +9,7 @@
 3. [Luarocs](https://luarocks.org)
 4. [lazygit](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation)
 5. [git](https://git-scm.com/downloads/linux)
-6. [Emmet](https://github.com/olrtg/emmet-language-server) - Optional.
+6. [Emmet](https://github.com/olrtg/emmet-language-server)
 7. [Ollama with Llama3.2](https://ollama.com)
 8. [Mongodb](https://www.mongodb.com/docs/mongodb-shell/install)
 9. [Btop](https://github.com/aristocratos/btop)

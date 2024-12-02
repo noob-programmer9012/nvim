@@ -6,9 +6,12 @@
         "Terminal",
         "local",
         "augroup",
-        "modes"
+        "modes",
+        "client",
+        "“TelescopeBorder”"
     ],
     "diagnostics.disable": [
-        "unused-local"
+        "unused-local",
+        "undefined-global"
     ]
 }

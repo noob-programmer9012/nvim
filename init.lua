@@ -24,6 +24,12 @@ vim.keymap.set("n", "<C-h>", "<C-w>h", { silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { silent = true })
 vim.keymap.set("n", "<leader>w", ":w<CR>", { silent = true })
 
+--colors
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#161616", fg = "#5E81AC" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#161616" })
+vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#161616" })
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#161616" })
+
 require("config.lazy")
 require("mason").setup()
 --vim.cmd([[colorscheme tokyonight-night]])
