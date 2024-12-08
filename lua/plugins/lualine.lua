@@ -53,7 +53,7 @@ return {
 				theme = bubbles_theme,
 				disabled_filetypes = { "NvimTree" },
 				-- section_separators = { left = "", right = "" },
-				-- component_separators = { left = "", right = "" },
+				-- component_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = {
@@ -102,7 +102,7 @@ return {
 				lualine_x = {
 					{
 						activeClients,
-						color = { bg = colors.color_red },
+						color = { bg = colors.color_orange },
 						separator = { left = "" },
 						draw_empty = true,
 					},
