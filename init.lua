@@ -3,8 +3,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set tabstop=2")
 vim.cmd("set expandtab")
 vim.g.mapleader = " "
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 vim.filetype.add({
   extension = {
@@ -32,4 +32,3 @@ vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#161616" })
 
 require("config.lazy")
 require("mason").setup()
---vim.cmd([[colorscheme tokyonight-night]])
