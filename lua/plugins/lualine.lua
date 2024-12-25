@@ -19,7 +19,8 @@ return {
       normal = {
         a = { fg = colors.color_fg0, bg = colors.color_orange },
         b = { fg = colors.color_fg0, bg = colors.color_yellow },
-        c = { fg = colors.color_fg0, bg = colors.color_bg1 },
+        -- c = { fg = colors.color_fg0, bg = colors.color_bg1 },
+        c = { fg = colors.color_fg0 },
       },
 
       insert = { a = { fg = colors.color_bg1, bg = colors.color_orange } },

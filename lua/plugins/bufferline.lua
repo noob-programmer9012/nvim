@@ -10,7 +10,7 @@ return {
       options = {
         separator_style = "slant",
         diagnostics = "nvim_lsp",
-        -- modified_icon = "+",
+        modified_icon = "+",
         diagnostics_update_on_event = true, -- use nvim's diagnostic handler
         -- The diagnostics indicator can be set to nil to keep the buffer name highlight but delete the highlighting
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
