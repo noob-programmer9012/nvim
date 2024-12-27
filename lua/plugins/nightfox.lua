@@ -41,8 +41,11 @@ return {
     }
 
     require("nightfox").setup({
+      -- options = {
+      --   transparent = true,
+      -- },
       palettes = palettes,
-      specs = specs
+      specs = specs,
     })
 
     vim.cmd("colorscheme carbonfox")

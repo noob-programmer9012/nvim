@@ -30,5 +30,16 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#161616" })
 vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "#161616" })
 vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "#161616" })
 
+local function system(command)
+  local file = assert(io.popen(command, 'r'))
+  local output = file:read('*all'):gsub("%s+", "")
+  file:close()
+  return output
+end
+
+if vim.fn.executable("python3") > 0 then
+  vim.g.python3_host_prog = system("which python3")
+end
+
 require("config.lazy")
 require("mason").setup()

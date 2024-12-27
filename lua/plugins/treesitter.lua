@@ -19,10 +19,11 @@ return {
         "html",
         "markdown",
         "markdown_inline",
+        "regex",
       },
       auto_install = true,
       sync_install = false,
-      highlight = { enable = true },
+      highlight = { enable = true, disable = { "c", "cpp" } },
       indent = { enable = true },
     })
     vim.treesitter.language.register("html", "handlebars")
